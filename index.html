@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare - Cuidado e Carinho para o seu Pet</title>
+    <meta name="description" content="Atendimento veterinário, estética animal, cirurgias e produtos para o seu pet com excelência e carinho.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    
+    <!-- JavaScript Principal -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="paw-print" class="logo-icon"></i>
+                <span>PetCare</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="btn btn-primary nav-btn">Agendar Visita</a>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir Menu">
+                <i data-lucide="menu" id="toggle-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge hero-badge"><i data-lucide="heart" class="icon-sm"></i> Amort e Dedicação Animal</span>
+                    <h1 class="hero-title">O cuidado de excelência que o seu melhor amigo merece</h1>
+                    <p class="hero-subtitle">Oferecemos estrutura médica completa, estética e um ambiente seguro e acolhedor para a saúde e felicidade do seu pet.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="btn btn-primary">Agendar Consulta</a>
+                        <a href="#servicos" class="btn btn-outline">Nossos Serviços</a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="hero-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=800" alt="Cão da raça Golden Retriever sorrindo" class="hero-img">
+                        <div class="hero-card hero-card-1">
+                            <i data-lucide="shield-check" class="hero-card-icon"></i>
+                            <div>
+                                <strong>100% Seguro</strong>
+                                <small>Equipe Especializada</small>
+                            </div>
+                        </div>
+                        <div class="hero-card hero-card-2">
+                            <i data-lucide="smile" class="hero-card-icon"></i>
+                            <div>
+                                <strong>+5.000 Pets</strong>
+                                <small>Atendidos com carinho</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Sobre Nós -->
+        <section class="section sobre" id="sobre">
+            <div class="container sobre-container">
+                <div class="sobre-media">
+                    <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&q=80&w=800" alt="Veterinária cuidando de um gato" class="sobre-img">
+                </div>
+                <div class="sobre-content">
+                    <span class="section-subtitle">Sobre Nós</span>
+                    <h2 class="section-title">Compromisso, paixão e medicina veterinária de ponta</h2>
+                    <p class="section-description">Fundado com o propósito de proporcionar uma vida mais saudável e feliz para os animais de estimação, o PetCare une medicina moderna, infraestrutura completa e um atendimento genuinamente humano e afetuoso.</p>
+                    <p class="section-description">Nossa equipe conta com profissionais apaixonados pelo que fazem, garantindo que seu pet se sinta acolhido e seguro em cada visita.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>10+</h3>
+                            <p>Anos de Experiência</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>15+</h3>
+                            <p>Especialistas</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>24/7</h3>
+                            <p>Suporte e Cuidado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Nossos Serviços -->
+        <section class="section servicos bg-light" id="servicos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Serviços Completos</span>
+                    <h2 class="section-title">Tudo o que seu pet precisa em um só lugar</h2>
+                </div>
+
+                <div class="servicos-grid">
+                    <div class="card servico-card">
+                        <div class="card-icon"><i data-lucide="stetho-scope"></i></div>
+                        <h3>Clínica Médica</h3>
+                        <p>Atendimento veterinário para acompanhamento contínuo da saúde e bem-estar do seu amigo.</p>
+                    </div>
+
+                    <div class="card servico-card">
+                        <div class="card-icon"><i data-lucide="activity"></i></div>
+                        <h3>Cirurgias</h3>
+                        <p>Procedimentos cirúrgicos realizados com cuidado rigoroso, anestesia inalatória e bloco moderno.</p>
+                    </div>
+
+                    <div class="card servico-card">
+                        <div class="card-icon"><i data-lucide="syringe"></i></div>
+                        <h3>Vacinações</h3>
+                        <p>Aplicação de vacinas importadas e acompanhamento preventivo completo do calendário anual.</p>
+                    </div>
+
+                    <div class="card servico-card">
+                        <div class="card-icon"><i data-lucide="microscope"></i></div>
+                        <h3>Exames Laboratoriais</h3>
+                        <p>Diagnósticos precisos e rápidos para auxílio e avaliação da saúde geral dos animais.</p>
+                    </div>
+
+                    <div class="card servico-card">
+                        <div class="card-icon"><i data-lucide="scan"></i></div>
+                        <h3>Exames de Imagem</h3>
+                        <p>Ultrassonografia e Raio-X digital para investigações detalhadas com laudos ágeis.</p>
+                    </div>
+
+                    <div class="card servico-card">
+                        <div class="card-icon"><i data-lucide="user-check"></i></div>
+                        <h3>Especialistas com Horário Marcado</h3>
+                        <p>Consultas com cardiologistas, dermatologistas, ortopedistas e outros especialistas.</p>
+                    </div>
+
+                    <div class="card servico-card">
+                        <div class="card-icon"><i data-lucide="scissors"></i></div>
+                        <h3>Banho & Tosa</h3>
+                        <p>Higiene, estética, cortes específicos da raça e hidratação com produtos hipoalergênicos.</p>
+                    </div>
+
+                    <div class="card servico-card">
+                        <div class="card-icon"><i data-lucide="car"></i></div>
+                        <h3>Taxi-Dog</h3>
+                        <p>Serviço seguro e confortável de busca e entrega do seu pet diretamente na sua residência.</p>
+                    </div>
+
+                    <div class="card servico-card">
+                        <div class="card-icon"><i data-lucide="shopping-bag"></i></div>
+                        <h3>Pet Shop</h3>
+                        <p>Seleção premium de rações, medicamentos, brinquedos e acessórios para todas as raças.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Diferenciais -->
+        <section class="section diferenciais" id="diferenciais">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Por que nos escolher?</span>
+                    <h2 class="section-title">Nossos Diferenciais</h2>
+                </div>
+
+                <div class="diferenciais-grid">
+                    <div class="card diferencial-card">
+                        <i data-lucide="award" class="diferencial-icon"></i>
+                        <h3>Profissionais Qualificados</h3>
+                        <p>Veterinários e tosadores em constante atualização para oferecer a melhor assistência.</p>
+                    </div>
+
+                    <div class="card diferencial-card">
+                        <i data-lucide="sparkles" class="diferencial-icon"></i>
+                        <h3>Ambiente Sanitizado</h3>
+                        <p>Esterilização rigorosa de todos os ambientes e equipamentos para total biossegurança.</p>
+                    </div>
+
+                    <div class="card diferencial-card">
+                        <i data-lucide="heart-handshake" class="diferencial-icon"></i>
+                        <h3>Atendimento Humanizado</h3>
+                        <p>Tratamos cada animal com o carinho, respeito e a atenção que ele realmente merece.</p>
+                    </div>
+
+                    <div class="card diferencial-card">
+                        <i data-lucide="clock" class="diferencial-icon"></i>
+                        <h3>Pontualidade & Agilidade</h3>
+                        <p>Respeito ao seu tempo com agendamentos precisos e resultados de exames rápidos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Galeria -->
+        <section class="section galeria bg-light" id="galeria">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Nossos Momentos</span>
+                    <h2 class="section-title">Galeria de Fotos</h2>
+                </div>
+
+                <div class="galeria-grid">
+                    <!-- Substitua as URLs das imagens abaixo pelas imagens reais do seu Pet Shop -->
+                    <div class="galeria-item">
+                        <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&q=80&w=600" alt="Cão no banho" loading="lazy">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=600" alt="Gato sendo examinado" loading="lazy">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&q=80&w=600" alt="Cão feliz na recepção" loading="lazy">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=600" alt="Tosa de cachorro" loading="lazy">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=600" alt="Produtos de Pet Shop" loading="lazy">
+                    </div>
+                    <div class="galeria-item">
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&q=80&w=600" alt="Gato descansando após consulta" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Depoimentos -->
+        <section class="section depoimentos" id="depoimentos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">O que dizem os tutores</span>
+                    <h2 class="section-title">Depoimentos de Clientes</h2>
+                </div>
+
+                <div class="depoimentos-grid">
+                    <div class="card depoimento-card">
+                        <div class="stars">
+                            <i data-lucide="star" class="star-icon"></i>
+                            <i data-lucide="star" class="star-icon"></i>
+                            <i data-lucide="star" class="star-icon"></i>
+                            <i data-lucide="star" class="star-icon"></i>
+                            <i data-lucide="star" class="star-icon"></i>
+                        </div>
+                        <p class="depoimento-texto">"Atendimento impecável! Levo o meu Golden para o Banho & Tosa toda semana e ele volta super cheiroso e feliz. A equipe é extraordinária."</p>
+                        <div class="depoimento-autor">
+                            <strong>Mariana Silva</strong>
+                            <small>Tutora do Thor</small>
+                        </div>
+                    </div>
+
+                    <div class="card depoimento-card">
+                        <div class="stars">
+                            <i data-lucide="star" class="star-icon"></i>
+                            <i data-lucide="star" class="star-icon"></i>
+                            <i data-lucide="star" class="star-icon"></i>
+                            <i data-lucide="star" class="star-icon"></i>
+                            <i data-lucide="star" class="star-icon"></i>
+                        </div>
+                        <p class="depoimento-texto">"Precisei de uma cirurgia de emergência para a minha gatinha e fui atendido rapidamente. Profissionais capacitados e humanos!"</p>
+                        <div class="depoimento-autor">
+                            <strong>Carlos Eduardo</strong>
+                            <small>Tutor da Luna</small>
+                        </div>
+                    </div>
+
+                    <div class="card depoimento-card">
+                        <div class="stars">
+                            <i data-lucide="star" class="star-icon"></i>
+                            <i data-lucide="star" class="star-icon"></i>
+                            <i data-lucide="star" class="star-icon"></i>
+                            <i data-lucide="star" class="star-icon"></i>
+                            <i data-lucide="star" class="star-icon"></i>
+                        </div>
+                        <p class="depoimento-texto">"O serviço de Taxi-Dog facilita muito minha rotina corrida. Recomendo de olhos fechados o PetCare para qualquer tutor."</p>
+                        <div class="depoimento-autor">
+                            <strong>Fernanda Costa</strong>
+                            <small>Tutora do Max</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Call To Action (CTA) -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>Seu pet merece o melhor cuidado hoje mesmo!</h2>
+                    <p>Agende uma consulta ou banho de forma rápida e prática pelo nosso WhatsApp.</p>
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="btn btn-light cta-btn">
+                        <i data-lucide="message-circle"></i> Conversar pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Contato + Localização -->
+        <section class="section contato" id="contato">
+            <div class="container">
+                <div class="contato-grid">
+                    <!-- Lado Esquerdo: Informações -->
+                    <div class="contato-info">
+                        <span class="section-subtitle">Entre em Contato</span>
+                        <h2 class="section-title">Estamos prontos para atender seu pet</h2>
+                        <p class="section-description">Visite-nos ou entre em contato pelos nossos canais oficiais.</p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <strong>WhatsApp / Telefone</strong>
+                                    <p>(11) 99999-9999</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <strong>E-mail</strong>
+                                    <p>contato@petcare.com.br</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i data-lucide="clock"></i></div>
+                                <div>
+                                    <strong>Horário de Funcionamento</strong>
+                                    <p>Segunda a Sexta: 08:00 às 19:00<br>Sábado: 08:00 às 16:00</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <strong>Localização</strong>
+                                    <p>Av. Principal, 1000 - Centro, Santo André - SP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lado Direito: Google Maps -->
+                    <div class="contato-mapa">
+                        <!-- INSIRA OU SUBSTITUA O IFRAME DO GOOGLE MAPS ABAIXO -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.776829748625!2d-46.533221!3d-23.657159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce428a9b1c7849%3A0xb30612bc4f9540b0!2sSanto%20Andr%C3%A9%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização do Pet Shop no Google Maps">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo footer-logo">
+                        <i data-lucide="paw-print" class="logo-icon"></i>
+                        <span>PetCare</span>
+                    </a>
+                    <p class="footer-text">Cuidados médicos e estéticos de excelência para os seus animais de estimação.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Contato</h4>
+                    <ul class="footer-links">
+                        <li><i data-lucide="phone" class="icon-xs"></i> (11) 99999-9999</li>
+                        <li><i data-lucide="mail" class="icon-xs"></i> contato@petcare.com.br</li>
+                        <li><i data-lucide="map-pin" class="icon-xs"></i> Santo André, SP</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 PetCare. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
